@@ -33,10 +33,10 @@ Please note that this does not apply to monitoring of the mouse or trackpad.
 On Linux, pynput uses X, so the following must be true:
 
   - An X server must be running.
-  - The environment variable $DISPLAY must be set.
+  - The environment variable `$DISPLAY` must be set.
 
-The latter requirement means that running pynput over SSH generally will not work. To work around that, make sure to set $DISPLAY:
+The latter requirement means that running pynput over SSH generally will not work. To work around that, make sure to set `$DISPLAY`:
 
 ```bash
-$ DISPLAY=:0 python -c 'import pynput'
+$ DISPLAY=:0 python3 main.py /path/to/save
 ```
